@@ -38,32 +38,38 @@ const FotaUploadForm_Component = () =>{
         <div className="FormContainer">
         <h1 className="m-0 titleForm">Upload Form</h1>
         <br/>
-        <div className="d-flex flex-row align-items-center justify-content-start">
-        <p style={{marginInline:"1vh"}} className="text-bold">version:</p>
-        <Input placeholder="version" />
-        </div>
-        <br/>
-        <div className="text-white">
-            <Dragger {...props}  >
-    <p className="ant-upload-drag-icon">
-      <InboxOutlined />
-    </p>
-    <p className="ant-upload-text text-white">Click or drag .hex file to this area to upload</p>
-    {/* <p className="ant-upload-hint text-white">
-      Support for a single or bulk upload. Strictly prohibited from uploading company data or other
-      banned files.
-    </p> */}
-  </Dragger> 
-        </div>
+
         <DataHandel/>
-        <br/>
-        <div className="text-right">
-        <Button type="primary" className="bg-white text-black px-3 " >Upload Now</Button>
-        </div>
+
         </div>
         </>
     )
 }
+
+
+
+// <div className="d-flex flex-row align-items-center justify-content-start">
+// <p style={{marginInline:"1vh"}} className="text-bold">version:</p>
+// <Input placeholder="version" />
+// </div>
+// <br/>
+// <div className="text-white">
+//     <Dragger {...props}  >
+// <p className="ant-upload-drag-icon">
+// <InboxOutlined />
+// </p>
+// <p className="ant-upload-text text-white">Click or drag .hex file to this area to upload</p>
+// {/* <p className="ant-upload-hint text-white">
+// Support for a single or bulk upload. Strictly prohibited from uploading company data or other
+// banned files.
+// </p> */}
+// </Dragger> 
+// </div>
+//         <br/>
+//         <div className="text-right">
+//         <Button type="primary" className="bg-white text-black px-3 " >Upload Now</Button>
+//         </div>
+
 
 
 export {FotaUploadForm_Component};

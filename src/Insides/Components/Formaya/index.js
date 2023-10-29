@@ -21,7 +21,7 @@ function DataHandler() {
       <form>
         <h1>React File Upload</h1>
         <input type="file" onChange={handleChange}/>
-        <button type="submit">Upload</button>
+        {/* <button type="submit">Upload</button> */}
       </form>
     </div>
   );
