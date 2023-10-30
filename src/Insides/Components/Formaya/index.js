@@ -8,6 +8,7 @@ function DataHandler() {
     formData.append('file', file);
 
     axios.post('https://fota.onrender.com/upload', formData)
+
       .then(response => {
         console.log(response.data);
       })
