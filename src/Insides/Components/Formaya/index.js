@@ -17,7 +17,7 @@ function DataHandler() {
       });
   }
 
-
+  // https://flaskproject-404121.wl.r.appspot.com/
   const handleSubmitting = (event) => {
     event.preventDefault();
     axios.get('https://flaskproject-404121.wl.r.appspot.com/GetFileData')
@@ -35,7 +35,7 @@ function DataHandler() {
     <div className="App">
       <form>
         <h1>React File Upload</h1>
-        <input type="file" onChange={handleChange} disabled/>
+        <input type="file" onChange={handleChange} />
         <button onClick={handleSubmitting}>Upload</button>
       </form>
     </div>
