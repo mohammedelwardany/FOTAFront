@@ -42,7 +42,7 @@ function DataHandler() {
     const formData = new FormData();
     formData.append('file', fileData);
   
-    axios.post('http://127.0.0.1:5000/upload', formData)
+    axios.post('https://flaskproject-404121.wl.r.appspot.com/upload', formData)
   
       .then(response => {
         console.log(response.data);
@@ -57,7 +57,7 @@ function DataHandler() {
   const props = {
     name: 'file',
     multiple: false,
-    action: 'http://127.0.0.1:5000/upload',
+    action: 'https://flaskproject-404121.wl.r.appspot.com/upload',
     onChange(info) {
       const { status } = info.file;
       if (status !== 'uploading') {
@@ -87,7 +87,7 @@ function DataHandler() {
     const formData = new FormData();
     formData.append('file', file);
 
-    axios.post('http://127.0.0.1:5000/upload', formData)
+    axios.post('https://flaskproject-404121.wl.r.appspot.com/upload', formData)
 
       .then(response => {
         console.log(response.data);
@@ -97,11 +97,11 @@ function DataHandler() {
       });
   }
 
-  // http://127.0.0.1:5000/
+  // https://flaskproject-404121.wl.r.appspot.com/
   const handleSubmitting = (event) => {
     event.preventDefault();
     setModalOpen(true)
-    axios.get('http://127.0.0.1:5000/GetFileData')
+    axios.get('https://flaskproject-404121.wl.r.appspot.com/GetFileData')
     .then(response => {
         setModalOpen(false)
         messageApi.open({
