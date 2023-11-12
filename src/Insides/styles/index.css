@@ -5,7 +5,7 @@
     height: 50px;
 }
 .bg-test{
-    background-color:#00aeff!important;
+    background-color:#a03939!important;
 }
 
 .bg{
@@ -14,9 +14,38 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.bg-Container{
-    
+.bg-login{
+    background-image: url("../../assets/loginbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+.h-100{
+    height: 100%;
+}
+.orange-text{
+    color: #F26B1D !important;
+}
+.white-text{
+    color: white !important;
+}
+.LoginContainer{
+    background-color:#f2f2f2!important;
+    padding: 10%;
+    min-height: 100%;
+    margin: 10%;
+    border-radius: 20px;
+}
+.UploadContainer{
+    background-image: url("../../assets/FormG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10%;
+    min-height: 100%;
+    max-width: 45vh;
+    margin: 10%;
+    border-radius: 20px;
+}
+
 .m-10{
     margin: 10vh;
 }
@@ -47,7 +76,7 @@
 }
 .titleForm{
     font-size: 3vh;
-    color: white;
+    color: #F26B1D;
     font-weight: bold;
     text-align: center;
 }
@@ -105,5 +134,126 @@
     align-items: start;
 }
 .text-bold{
-    font-weight: bold;
+    font-weight: bold !important;
 }
+
+
+.banner-txt{
+    font-size: 3vh;
+    font-family: MrRobot;
+    color: #f2f2f2;
+    
+}
+
+.uploadDoc{
+    width: 100%;
+    text-align: center;
+
+}
+
+.cont-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000033;
+    border-radius: 20px;
+}
+
+.login-Fota{
+    width: 60%;
+}
+.fota-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+
+
+
+.uploadDoc::-webkit-file-upload-button {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+      
+  }
+
+  .uploadDoc::before {
+    content: 'Select a .txt file';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    padding-block: 100px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: bold;
+    font-size: 10pt;
+    
+  }
+  .uploadDoc:hover::before {
+    border-color: black;
+  }
+  .uploadDoc:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  }
+
+
+
+  #components-form-demo-normal-login .login-form {
+    max-width: 300px;
+    
+    
+  }
+  #components-form-demo-normal-login .login-form-forgot {
+    float: right;
+  }
+  #components-form-demo-normal-login .ant-col-rtl .login-form-forgot {
+    float: left;
+  }
+  #components-form-demo-normal-login .login-form-button {
+    width: 100%;
+    padding-block: 100vh;
+    
+  }
+  .BtnStyle{
+    background-color: red !important;
+    padding-inline: 10% !important;
+  }
+
+
+  .UploadPtn{
+    background-color: #F26B1D;
+    width: 30vh;
+    height: 7vh;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    font-weight: bold;
+    font-size: 2.4vh;
+    margin-top: 4%;
+    margin-left: 4%;
+    border-width: 0px;
+  }
+
+  .UploadPtn:hover{
+    background-color: #f2f2f2;
+    color: #F26B1D;
+    border-color: #F26B1D;
+    border-width: 1px;
+    cursor: pointer;
+  }

@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import {FotaUpload_Screen} from "./Insides/Screens"
+import {FotaUpload_Screen, LoginScreen} from "./Insides/Screens"
 import './App.css';
 import './Insides/styles/index.css'
 

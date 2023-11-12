@@ -35,7 +35,7 @@ const FotaUploadForm_Component = () =>{
     return(
         
         <>
-        <div className="FormContainer">
+        <div className="UploadContainer">
         <h1 className="m-0 titleForm">Upload Form</h1>
         <br/>
 
