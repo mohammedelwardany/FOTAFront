@@ -61,12 +61,14 @@ function DataHandler() {
     onChange(info) {
       const { status } = info.file;
       if (status !== 'uploading') {
-
+        console.log("uploading")
       }
       if (status === 'done') {
         message.success(`${info.file.name} file uploaded successfully.`);
+        console.log(info)
       } else if (status === 'error') {
         message.error(`${info.file.name} file upload failed.`);
+        console.log(info.error)
       }
     },
     onDrop(e) {
